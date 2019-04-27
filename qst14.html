@@ -26,7 +26,12 @@
 
             x.contentEditable = true;
             y.contentEditable = true;
-          
+
+            botao.addEventListener("click", function(){
+                produto.textContent = "O produto de " + x.textContent + " e " + y.textContent + " é " + x.textContent*y.textContent + "!";
+                soma.textContent = "A soma de " + x.textContent + " e " + y.textContent + " é " + (Number.parseInt(x.textContent) + Number.parseInt(y.textContent)) + "!";
+            });
+
            
         </script>
 
