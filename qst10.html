@@ -9,6 +9,15 @@
     <p id="sobrenome">Albuquerque</p>
     <h1 id="nomecompleto"></h1>
     <script>
+        var nome;
+        var sobrenome;
+        var nomeCompleto;
+        
+        nome = document.getElementById("nome");
+        sobrenome = document.getElementById("sobrenome");
+        nomeCompleto = document.getElementById("nomecompleto");
+
+        nomeCompleto.textContent = "Bem vindo " + nome.textContent + " " + sobrenome.textContent + "!";
     
     </script>
     
