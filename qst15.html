@@ -11,7 +11,7 @@
         <p id="resultado"></p>
         <button id="avaliar">Avaliar</button>
         <button id="limpar">Limpar</button>
-        <button id="melhorias"></button>
+        <p id="melhorias"></p>
 
         <script>
         
@@ -38,7 +38,7 @@
 
         }
 
-        botaolimpar.addEventListener("click", limparClick);
+        botaoLimpar.addEventListener("click", limparClick);
 
         var avaliarClick = function(){
             media = (Number.parseInt(confeitaria.textContent) + Number.parseInt(coberturas.textContent) + Number.parseInt(bolos.textContent)) / 3
@@ -50,16 +50,16 @@
             }
             
             if(Number.parseInt(confeitaria.textContent) < 60){
-                resultado.textContent = resultado.textContent + " " + nome.textContent + ", considere estudar mais Confeitaria!";
+                melhorias.textContent = melhorias.textContent + " " + nome.textContent + ", considere estudar mais Confeitaria!";
             }
 
             if(Number.parseInt(coberturas.textContent) < 60){
-                resultado.textContent = resultado.textContent + " " + nome.textContent + ", considere estudar mais Coberturas!";
+                melhorias.textContent = melhorias.textContent + " " + nome.textContent + ", considere estudar mais Coberturas!";
             }
 
             
             if(Number.parseInt(bolos.textContent) < 60){
-                resultado.textContent = resultado.textContent + " " + nome.textContent + ", considere estudar mais bolos!";
+                melhorias.textContent = melhorias.textContent + " " + nome.textContent + ", considere estudar mais Bolos!";
             }
             
         }        
